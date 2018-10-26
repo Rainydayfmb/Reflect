@@ -1,3 +1,5 @@
+package reflect;
+
 /**
  * @Description:
  * @Author：feipeng
@@ -21,7 +23,7 @@ public class Employee {
     // 将要被调用的方法
     public void printName(String n) {
         name = n;
-        System.out.println("The Employee Name is: " + name);
+        System.out.println("The reflect.Employee Name is: " + name);
     }
     private int age;
     private String name;

@@ -1,3 +1,5 @@
+package reflect;
+
 import java.lang.reflect.Method;
 
 /**
@@ -29,7 +31,7 @@ public class InvokeMethods {
             sAge.invoke(emp, args1);
             Integer AGE = (Integer) gAge.invoke(emp, null);
             int age = AGE.intValue();
-            System.out.println("The Employee Age is: " + age);
+            System.out.println("The reflect.Employee Age is: " + age);
             Object[] args3 = { new String("Jack") };
             pName.invoke(emp, args3);
         } catch (Exception e) {
